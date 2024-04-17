@@ -27,6 +27,10 @@ class _HomeScreenView extends StatelessWidget {
             title: 'State Provider',
             subTitle: 'Simple State',
             location: '/state-provider'),
+        _CustomListTile(
+            title: 'Pokemon Future',
+            subTitle: 'Simple Future',
+            location: '/pokemon-screen'),
       ],
     );
   }
