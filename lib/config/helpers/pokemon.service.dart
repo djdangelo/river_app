@@ -9,7 +9,7 @@ class PokemonService {
 
       return response.data['name'] ?? 'Name not found';
     } catch (e) {
-      throw 'Name not found';
+      throw Exception('Name not found');
     }
   }
 }
