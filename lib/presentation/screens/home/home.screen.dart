@@ -31,6 +31,14 @@ class _HomeScreenView extends StatelessWidget {
             title: 'Pokemon Future',
             subTitle: 'Simple Future',
             location: '/pokemon-screen'),
+        _CustomListTile(
+            title: 'Stream Provider',
+            subTitle: 'Simple Future',
+            location: '/stream-screen'),
+        _CustomListTile(
+            title: 'Todos Notifier Provider',
+            subTitle: 'Simple Future',
+            location: '/todos-screen'),
       ],
     );
   }
@@ -49,8 +57,12 @@ class _CustomListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final titleMedium = Theme.of(context).textTheme.titleMedium;
     return ListTile(
-      title: Text(title),
+      title: Text(
+        title,
+        style: titleMedium,
+      ),
       subtitle: Text(subTitle),
       trailing: const Icon(Icons.arrow_forward_ios_rounded),
       onTap: () => context.push(location),
