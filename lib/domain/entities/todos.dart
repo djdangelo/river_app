@@ -13,10 +13,10 @@ class Todos {
       Todos(
         id: id ?? this.id,
         description: description ?? this.description,
-        completedAt: completedAt ?? this.completedAt,
+        completedAt: completedAt,
       );
 
   bool get done {
-    return completedAt == null;
+    return completedAt != null;
   }
 }
